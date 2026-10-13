@@ -218,3 +218,9 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Research datasets and outputs
+data/
+outputs/
+.venv/
+.ipynb_checkpoints/
