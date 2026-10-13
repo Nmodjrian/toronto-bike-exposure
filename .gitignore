@@ -224,3 +224,24 @@ data/
 outputs/
 .venv/
 .ipynb_checkpoints/
+
+# GraphHopper binaries and generated graph caches
+tools/graphhopper/*.jar
+tools/graphhopper/graph-cache/
+tools/graphhopper/graph-cache-*/
+
+# Large research data
+data/
+outputs/
+
+# GraphHopper binaries, caches and logs
+tools/graphhopper/*.jar
+tools/graphhopper/graph-cache*/
+tools/graphhopper/*.log
+
+# Python and Jupyter
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.ipynb_checkpoints/**
+*.pyc

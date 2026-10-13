@@ -1,0 +1,23 @@
+graphhopper:
+  datareader.file: data/osm/Toronto.osm.pbf
+  graph.location: tools/graphhopper/graph-cache-bike
+
+  profiles:
+    - name: bike
+      custom_model_files: [bike.json]
+
+  profiles_ch:
+    - profile: bike
+
+  profiles_lm: []
+
+  graph.encoded_values: bike_access, bike_average_speed, bike_priority, bike_road_access, bike_network, ferry_speed, mtb_rating, hike_rating, country, road_class
+
+  import.osm.ignored_highways: motorway,trunk
+  prepare.min_network_size: 200
+
+server:
+  application_connectors:
+    - type: http
+      port: 8989
+      bind_host: 127.0.0.1
